@@ -1,13 +1,13 @@
  .navbar ul {
         list-style-type: none;
-        background-color: white;
-        color: rgb(255, 208, 0);
+        background-color: #ffffff;
+        background-blend-mode: lighten;
         padding:20px;
-        text-align: right;
+        text-align: right; 
 
  }
      .navbar a{
-        color: rgb(255, 208, 0);
+        color: white;
         text-decoration: none;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 20px;
@@ -17,3 +17,4 @@
         margin-right: 5px;
         padding: 10px;
      }
+
