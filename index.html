@@ -31,7 +31,11 @@
     </div>
 
 <section class="hero">
-  <video class="hero-video" src="LOVE CALABARZON.mp4" type="video/mp4" autoplay muted loop></video>
+  <!-- Video: ensure muted + playsinline for mobile autoplay; use <source> for type attribute -->
+  <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="poster.jpg">
+    <source src="LOVE%20CALABARZON.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
   <div class="hero-content">
     <img src="Calabarzon_Slogan.png" alt="Center Image" class="hero-image">
   </div>
