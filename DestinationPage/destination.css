@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: url('back-pic.jpg') fixed no-repeat center center/cover;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: -1;
+}
+
+.page-content {
+    padding-top: 130px;
+    padding-bottom: 60px;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.page-content h1 {
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 90px;
+    color: #fece05;
+    margin-bottom: 70px;
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.6);
+}
+
+.spot {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 40px;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.image-box {
+    position: relative;
+    width: 420px;       
+    height: 250px;      
+    border-radius: 12px;
+    overflow: hidden;
+    border: 3px solid #fece05;   
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;   
+}
+
+/* SPOT INFO */
+.spot-info {
+    flex: 1;
+    min-width: 250px;
+    color: #fff;
+}
+
+.spot-info h2 {
+
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 45px;
+    color: #ed3241;
+    margin-top: 10px; 
+    margin-bottom: 3px;
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.6)
+
+}
+
+.spot-info p {
+    font-family: 'Open Sans', sans-serif;  
+    font-size: 16px;
+    line-height: 1.7;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.location {
+    font-weight: 600;
+    color:#fece05;
+    font-size: 24px;
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.6);
+
+}
+
+
+.learn-more {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 25px;
+    border-radius: 50px; 
+    background: rgba(255, 255, 255, 0.25); 
+    backdrop-filter: blur(8px);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.image-box:hover .learn-more {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05);
+}

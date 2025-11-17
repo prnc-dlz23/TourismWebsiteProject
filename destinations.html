@@ -3,30 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore Calabarzon</title>
-    <link rel="stylesheet" href="webdesign.css">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Popular Destinations</title>
+    <link rel="icon" type="image/png" href="cal-logo.png">
+    <link rel="stylesheet" href="nav-footer.css">
+    <link rel="stylesheet" href="DestinationPage/destination.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="navbar">
-
-         <div class="logo">
-      <img src="cal-logo.png" alt="Calabarzon Logo">
-      <h2>Explore Calabarzon</h2>
-
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">
+        <img src="cal-logo.png" alt="Calabarzon Logo">
+        <h2>Explore Calabarzon</h2>
     </div>
-
-        <ul>
-        <li> <a href="index.html">Homepage</a></li>
-        <li><a href="destinations.html"> Popular Destinations</a></li>
+    <ul>
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="destinations.html">Popular Destinations</a></li>
         <li><a href="activities.html">Activities and Experiences</a></li>
-        <li> <a href="history.html">Our History and Culture</a></li>
-        <li><a href="plan-your-trip.html"> Plan Your Trip</a></li>
-
+        <li><a href="history.html">Our History and Culture</a></li>
+        <li><a href="plan-your-trip.html">Plan Your Trip</a></li>
     </ul>
+</div>
+
+<!-- MAIN CONTENT -->
+<section class="page-content">
+    <h1>Popular Destinations</h1>
+
+    <!-- SPOT 1 -->
+    <div class="spot">
+        <div class="image-box">
+            <img src="DestinationPage/taal.jpg" alt="Taal Volcano">
+            <a href="https://share.google/tOkJjxuvjOuP9ZeVK" class="learn-more">Learn More</a>
+        </div>
+        <div class="spot-info">
+            <h2>Taal Volcano</h2>
+            <p>Taal Volcano is renowned for its unique, picturesque setting as a "volcano within a lake on an island within a lake," offering stunning views from the Tagaytay ridge.
+                This active complex volcano is a popular tourist destination, but it is vital to remember the entire Volcano Island is a Permanent Danger Zone.
+                Visitors must check the safety guidelines from the Philippine Institute of Volcanology and Seismology (PHIVOLCS) as access to the island remains strictly prohibited.</p>
+            <span class="location">-Batangas</span>
+        </div>
     </div>
+
+    <!-- SPOT 2 -->
+    <div class="spot">
+        <div class="image-box">
+            <img src="DestinationPage/puerto-galera.jpg" alt="Puerto Galera">
+            <a href="https://share.google/mVZp1vZqzQmaTB0eI" class="learn-more">Learn More</a>
+        </div>
+        <div class="spot-info">
+            <h2>Puerto Galera</h2>
+            <p>Puerto Galera, located on Mindoro Island and a designated UNESCO "Man and Biosphere Reserve," is a premier beach and diving destination celebrated for its natural harbor, pristine white-sand beaches, and rich marine biodiversity.
+                This vibrant spot offers a range of aquatic activities, from world-class scuba diving in coral gardens to relaxing on popular shores like White Beach and lively Sabang Beach.</p>
+            <span class="location">-Oriental Mindoro</span>
+        </div>
+    </div>
+
+    <!-- SPOT 3 -->
+    <div class="spot">
+        <div class="image-box">
+            <img src="DestinationPage/pagsanjan-falls.jpg" alt="Pagsanjan Falls">
+            <a href="https://share.google/kXITmODbjMnbpciQg" class="learn-more">Learn More</a>
+        </div>
+        <div class="spot-info">
+            <h2>Pagsanjan Falls</h2>
+            <p>Pagsanjan Falls is a popular destination located in Laguna province.
+                It is known for its beautiful three-tiered waterfall and the gorge that surrounds it.
+                Visitors can take a boat tour to see the falls and the scenic environment.</p>
+            <span class="location">-Laguna</span>
+        </div>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<section class="site-footer">
+  <div class="footer-icons">
+    <a href="mailto:info@calabarzon.com" class="footer-icon" data-tooltip="Email us">
+      <img src="gmail-logo.jpg" alt="Gmail">
+    </a>
+    <a href="tel:+639123456789" class="footer-icon" data-tooltip="Call us">
+      <img src="phone-logo.png" alt="Phone">
+    </a>
+    <a href="https://www.facebook.com/CalabarzonTourism" class="footer-icon" target="_blank" data-tooltip="Visit our page">
+      <img src="facebook-logo.png" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/CalabarzonTourism" class="footer-icon" target="_blank" data-tooltip="Visit our page">
+      <img src="instagram-logo.png" alt="Instagram">
+    </a>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 Calabarzon Tourism. All rights reserved.
+  </div>
+</section>
+
+
 </body>
 </html>
