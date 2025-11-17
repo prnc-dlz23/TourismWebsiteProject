@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Explore Calabarzon</title>
-  <link rel="stylesheet" href="webdesign.css">
+  <link rel="stylesheet" href="Homepage/homepage.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -16,12 +16,12 @@
 
 <body>
 
-  <div class="dim"></div>
+
 
   <div class="navbar">
 
     <div class="logo">
-      <img src="cal-logo.png" alt="Calabarzon Logo">
+      <img src="Homepage/cal-logo.png" alt="Calabarzon Logo">
       <h2>Explore Calabarzon</h2>
 
     </div>
@@ -37,26 +37,26 @@
   </div>
 
   <section class="hero">
-
-    <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="poster.jpg">
-      <source src="LOVE CALABARZON.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="hero-content">
-      <img src="tagline.png" alt="Center Image" class="hero-image">
-    </div>
-  </section>
+  <video class="hero-video" autoplay muted loop playsinline preload="auto">
+    <source src="Homepage/LOVE CALABARZON.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="dim"></div>
+  <div class="hero-content">
+    <img src="Homepage/tagline.png" alt="Center Image" class="hero-image">
+  </div>
+</section>
 
   <section class="intro-section">
-    <div class="intro-glass">
+    <div class="intro-card">
 
-      <img src="calabarzon-photo.jpg" alt="Calabarzon Intro Photo" class="intro-side-image">
+      <img src="Homepage/calabarzon-photo.jpg" alt="Calabarzon Intro Photo" class="intro-side-image">
 
       <div class="intro-text">
 
         <h1>Getting to Know CALABARZON </h1>
         <hr>
-        <p id="introduction">
+        <p>
           <br> CALABARZON, also known as Region IV-A. CALABARZON is one of the most dynamic regions in the Philippines,
           known for its mix of fast-growing cities, rich history, and strong agricultural roots.
           It includes five provinces — Cavite, Laguna, Batangas, Rizal, and Quezon — each offering something unique,
@@ -72,10 +72,50 @@
     </div>
   </section>
 
+<section class="gallery">
+  <h2 class="gallery-title">CALABARZON TOURIST SPOTS</h2>
 
+  <div class="gallery-grid">
+    <a href="https://www.beenaroundtheglobe.com/taal-volcano-philippines/" class="gallery-item">
+      <img src="Homepage/Tourist1.jpg" alt="Tourist Spot 1">
+      <div class="overlay">Taal Volcano</div>
+    </a>
+    <a href="https://en.wikipedia.org/wiki/Fantasy_World_(theme_park)" class="gallery-item">
+      <img src="Homepage/Tourist2.jpg" alt="Tourist Spot 2">
+      <div class="overlay">Fantasy World</div>
+    </a>
+    <a href="https://www.traveloka.com/en-ph/explore/destination/exploring-the-beauty-of-san-pablo-city-laguna-must-visit-tourist-attractions-that-will-leave-you-in-awe/300906" class="gallery-item">
+      <img src="Homepage/Tourist3.jpeg" alt="Tourist Spot 3">
+      <div class="overlay">Seven Lakes of San Pablo</div>
+    </a>
+    <a href="https://www.tanawexplorer.com/hulugan-falls/" class="gallery-item">
+      <img src="Homepage/Tourist4.jpg" alt="Tourist Spot 4">
+      <div class="overlay">Hulugan Falls</div>
+    </a>
+    <a href="https://www.wikiwand.com/en/map/Saint%20John%20the%20Baptist%20Parish%20Church%20(Liliw)" class="gallery-item">
+      <img src="Homepage/Tourist5.jpg" alt="Tourist Spot 5">
+      <div class="overlay">Saint John the Baptist Parish Church (Liliw)</div>
+    </a>
+    <a href="https://www.atlasobscura.com/places/fortune-island" class="gallery-item">
+      <img src="Homepage/Tourist6.jpg" alt="Tourist Spot 6">
+      <div class="overlay">Fortune Island</div>
+    </a>
+  </div>
+</section>
 
-
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="contact-info">
+      <h3>Contact Us</h3>
+      <p>Email: info@calabarzon.com</p>
+      <p>Phone: +63 912 345 6789</p>
+      <p>Address: Calabarzon Region, Philippines</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 Calabarzon Tourism. All rights reserved.
+  </div>
+</footer>
 
 </body>
-
 </html>
