@@ -1,3 +1,6 @@
+body {
+    background: #00a8e0;
+}
 /*HERO SECTION*/
 
 .hero {
@@ -99,9 +102,12 @@
 
 .intro-text h1 {
   font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin: 0px;
   font-size: 75px;
   color: #fece05;
+  text-shadow: 4px 4px 8px rgba(0,0,0,0.6);
   padding-bottom: 0;
 }
 
@@ -118,6 +124,8 @@
   text-align: center;
   padding: 5px 20px 60px 20px; 
   background-color: #00a8e0;
+  height: 100%;
+  z-index: 9;
 }
 
 .gallery::before {
@@ -133,10 +141,13 @@
   z-index: 1; 
 }
 .gallery-title {
-  font-size: 67px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
   padding-top: -10px;
   margin-bottom: 25px;
-  color: #ed3241; 
+  color: #fece05; 
   text-shadow: 4px 4px 8px rgba(0,0,0,0.6)
 }
 
@@ -178,8 +189,8 @@
   left: 0;
   right: 0;
   background: rgba(0,0,0,0.6);
-  color:#fece05;
-  font: 20px;
+  color: #ed3241;
+  font: 45px;
   padding: 15px;
   opacity: 0;
   transform: translateY(100%);

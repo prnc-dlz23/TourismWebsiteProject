@@ -23,9 +23,11 @@ body::before {
 }
 
 .page-content h1 {
+   font-family: "Bebas Neue", sans-serif;
+   font-weight: 400;
+   font-style: normal;
     text-align: center;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 90px;
+    font-size: 75px;
     color: #fece05;
     margin-bottom: 70px;
     text-shadow: 4px 4px 8px rgba(0,0,0,0.6);
@@ -88,10 +90,12 @@ body::before {
 }
 
 .location {
-    font-weight: 600;
-    color:#fece05;
-    font-size: 24px;
-    text-shadow: 4px 4px 8px rgba(0,0,0,0.6);
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color:#fece05;
+  font-size: 24px;
+  text-shadow: 4px 4px 8px rgba(0,0,0,0.6);
 
 }
 

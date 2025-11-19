@@ -1,55 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activities &amp; Experiences</title>
-    <link rel="icon" type="images/png" href="cal-logo.png" width="500px">
-    <link rel="stylesheet" href="nav-footer.css">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activities &amp; Experiences</title>
+  <link rel="icon" type="image/png" href="NavigationFooter-Icons/cal-logo.png">
+  <link rel="stylesheet" href="ActivitiesPage/activities.css">
+  <link rel="stylesheet" href="nav-footer.css">
+  <link rel="stylesheet" href="activities.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
 
-    <div class="navbar">
-
+  <!-- NAVBAR -->
+  <div class="navbar">
     <div class="logo">
-      <img src="cal-logo.png" alt="Calabarzon Logo">
+      <img src="NavigationFooter-Icons/cal-logo.png" alt="Calabarzon Logo">
       <h2>Explore Calabarzon</h2>
-
     </div>
 
-        <ul>
-        <li> <a href="index.html">Homepage</a></li>
-        <li><a href="destinations.html"> Popular Destinations</a></li>
-        <li><a href="activities.html">Activities and Experiences</a></li>
-        <li> <a href="history.html">Our History and Culture</a></li>
-        <li><a href="plan-your-trip.html"> Plan Your Trip</a></li>
-
+    <ul>
+      <li> <a href="index.html">Homepage</a></li>
+      <li><a href="destinations.html"> Popular Destinations</a></li>
+      <li><a href="activities.html" class="active">Activities and Experiences</a></li>
+      <li> <a href="history.html">Our History and Culture</a></li>
+      <li><a href="plan-your-trip.html"> Plan Your Trip</a></li>
     </ul>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="activities-hero">
+    <div class="activities-hero-content">
+      <h1>Activities &amp; Experiences</h1>
+      <p>Discover the diverse adventures waiting for you in Calabarzon</p>
+    </div>
+  </section>
+
+  <!-- ACTIVITIES SECTIONS -->
+  <section class="activities-container">
+
+    <!-- Adventure Section -->
+    <div class="activity-category">
+      <div class="category-header">
+        <img src="ActivitiesPage/act-icon.png" alt="Adventure Icon" class="category-icon">
+        <h2>Adventure</h2>
+      </div>
+      <div class="activity-content">
+        <img src="ActivitiesPage/Activities-pic.jpg" alt="Adventure Activities" class="category-image">
+        <ul class="activity-list">
+          <li>Trekking to Taal Volcano Crater</li>
+          <li>Island Hopping in Batangas</li>
+          <li>Rock Climbing in Rizal</li>
+          <li>Kayaking in Laguna's Seven Lakes</li>
+          <li>Paragliding in Cavite</li>
+          <li>Waterfall Rappelling in Quezon</li>
+        </ul>
+      </div>
     </div>
 
-    <!-- FOOTER -->
-<section class="site-footer">
-  <div class="footer-icons">
-    <a href="mailto:info@calabarzon.com" class="footer-icon" data-tooltip="Email us">
-      <img src="gmail-logo.jpg" alt="Gmail">
-    </a>
-    <a href="tel:+639123456789" class="footer-icon" data-tooltip="Call us">
-      <img src="phone-logo.png" alt="Phone">
-    </a>
-    <a href="https://www.facebook.com/CalabarzonTourism" class="footer-icon" target="_blank" data-tooltip="Visit our page">
-      <img src="facebook-logo.png" alt="Facebook">
-    </a>
-    <a href="https://www.instagram.com/CalabarzonTourism" class="footer-icon" target="_blank" data-tooltip="Visit our page">
-      <img src="instagram-logo.png" alt="Instagram">
-    </a>
-  </div>
-  <div class="footer-bottom">
-    &copy; 2025 Calabarzon Tourism. All rights reserved.
-  </div>
-</section>
+    <!-- Culture Section -->
+    <div class="activity-category">
+      <div class="category-header">
+        <img src="ActivitiesPage/culture-icon.png" alt="Culture Icon" class="category-icon">
+        <h2>Culture</h2>
+      </div>
+      <div class="activity-content">
+        <img src="ActivitiesPage/Cult-pic.jpg" alt="Cultural Activities" class="category-image">
+        <ul class="activity-list">
+          <li>Visiting Historical Churches and Sites</li>
+          <li>Attending Local Festivals (Pahiyas, Higantes)</li>
+          <li>Traditional Craft Workshops</li>
+          <li>Heritage Tours in Cavite and Laguna</li>
+          <li>Museum Hopping in Rizal</li>
+          <li>Cultural Immersion with Indigenous Communities</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Food Section -->
+    <div class="activity-category">
+      <div class="category-header">
+        <img src="ActivitiesPage/food-icon.png" alt="Food Icon" class="category-icon">
+        <h2>Food</h2>
+      </div>
+      <div class="activity-content">
+        <img src="ActivitiesPage/Food-pic.png" alt="Food Experiences" class="category-image">
+        <ul class="activity-list">
+          <li>Food Crawl in Batangas City</li>
+          <li>Cooking Classes for Local Dishes</li>
+          <li>Farm-to-Table Experiences in Laguna</li>
+          <li>Coffee Tasting in Cavite</li>
+          <li>Seafood Feast in Coastal Towns</li>
+          <li>Visiting Local Markets and Food Hubs</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Nature Section -->
+    <div class="activity-category">
+      <div class="category-header">
+        <img src="ActivitiesPage/nature-icon.png" alt="Nature Icon" class="category-icon">
+        <h2>Nature</h2>
+      </div>
+      <div class="activity-content">
+        <img src="ActivitiesPage/Nat-pic.jpg" alt="Nature Activities" class="category-image">
+        <ul class="activity-list">
+          <li>Bird Watching in Rizal's Forests</li>
+          <li>Hot Spring Relaxation in Laguna</li>
+          <li>Beach Camping in Batangas</li>
+          <li>Mountain Biking in Cavite</li>
+          <li>River Trekking in Quezon</li>
+          <li>Photography Tours of Natural Landscapes</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Relaxation Section -->
+    <div class="activity-category">
+      <div class="category-header">
+        <img src="ActivitiesPage/rel-icon.png" alt="Relaxation Icon" class="category-icon">
+        <h2>Relaxation</h2>
+      </div>
+      <div class="activity-content">
+        <img src="ActivitiesPage/Relaxation-pic.jpg" alt="Relaxation Activities" class="category-image">
+        <ul class="activity-list">
+          <li>Spa and Wellness Retreats</li>
+          <li>Beach Lounging in Laiya, Batangas</li>
+          <li>Yoga and Meditation Retreats</li>
+          <li>Resort Stays with Mountain Views</li>
+          <li>Sunset Watching at Coastal Areas</li>
+          <li>Leisure Walks in Heritage Towns</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <section class="site-footer">
+    <div class="footer-icons">
+      <a href="mailto:info@calabarzon.com" class="footer-icon" data-tooltip="Email us">
+        <img src="NavigationFooter-Icons/gmail-logo.jpg" alt="Gmail">
+      </a>
+      <a href="tel:+639123456789" class="footer-icon" data-tooltip="Call us">
+        <img src="NavigationFooter-Icons/phone-logo.png" alt="Phone">
+      </a>
+      <a href="https://www.facebook.com/CalabarzonTourism" class="footer-icon" target="_blank"
+        data-tooltip="Visit our page">
+        <img src="NavigationFooter-Icons/facebook-logo.png" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/CalabarzonTourism" class="footer-icon" target="_blank"
+        data-tooltip="Visit our page">
+        <img src="NavigationFooter-Icons/instagram-logo.png" alt="Instagram">
+      </a>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Calabarzon Tourism. All rights reserved.
+    </div>
+  </section>
 
 </body>
+
 </html>
