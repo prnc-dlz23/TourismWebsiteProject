@@ -1,0 +1,281 @@
+/* history.css */
+/* HERO SECTION - BEHIND NAVIGATION */
+
+.history-hero {
+  position: relative;
+  height: 55vh;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+              url('HistoryBanner.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.history-hero-content h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+   font-style: normal;
+  margin: 0;
+  color: #fece05;
+  text-shadow: 4px 4px 8px rgba(0,0,0,0.6);
+  letter-spacing: 2px;
+  padding-top: 70px;
+}
+
+.history-hero-content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* SECTION HEADER */
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 50px;
+  color: #fece05;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.underline {
+  width: 100px;
+  height: 4px;
+  background: #00a8e0;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* HISTORY SECTION */
+.history-section {
+  padding: 80px 0;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.history-content {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.history-image {
+  flex: 1;
+}
+
+.history-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.history-text {
+  flex: 1;
+}
+
+.history-text p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  color: #333;
+  text-align: justify;
+}
+
+/* CULTURE SECTION */
+.culture-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #00a8e0, #0056b3);
+}
+
+.culture-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* CULTURE CARDS - SEPARATE ROWS */
+.culture-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+  border-top: 5px solid #fece05;
+  overflow: hidden;
+  height: 350px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.culture-card:hover {
+  height: 480px;
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card-wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+/* CARD IMAGE - CENTERED BY DEFAULT */
+.card-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.culture-card:hover .card-image {
+  width: 40%;
+  left: 5%;
+  justify-content: flex-start;
+  padding-left: 0;
+}
+
+.card-image img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: all 0.5s ease;
+}
+
+.culture-card:hover .card-image img {
+  width: 100%;
+  height: 90%;
+}
+
+/* CARD CONTENT - HIDDEN BY DEFAULT */
+.card-content {
+  width: 0;
+  opacity: 0;
+  padding: 0;
+  transition: all 0.5s ease;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.culture-card:hover .card-content {
+  width: 50%;
+  opacity: 1;
+  padding: 25px;
+  right: 5%;
+}
+
+.culture-icon {
+  width: 60px;
+  height: 60px;
+  background: #00a8e0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 25px;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+  flex-shrink: 0;
+}
+
+.culture-card:hover .culture-icon {
+  background: #fece05;
+  transform: rotate(15deg);
+}
+
+.culture-card h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 28px;
+  color: #00a8e0;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+  line-height: 1.2;
+  flex-shrink: 0;
+}
+
+.culture-card:hover h3 {
+  color: #fece05;
+}
+
+.culture-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.culture-list li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+  color: #333;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 5px;
+  transition: all 0.3s;
+  line-height: 1.3;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+
+.culture-list li:before {
+  content: "•";
+  color: #fece05;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.culture-list li:last-child {
+  border-bottom: none;
+}
+
+.culture-list strong {
+  color: #00a8e0;
+  font-weight: 600;
+}
+

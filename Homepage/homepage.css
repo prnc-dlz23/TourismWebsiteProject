@@ -1,6 +1,7 @@
 body {
     background: #00a8e0;
 }
+
 /*HERO SECTION*/
 
 .hero {
@@ -151,7 +152,7 @@ body {
   text-shadow: 4px 4px 8px rgba(0,0,0,0.6)
 }
 
-/* Grid Layout */
+/* GRID LAYOUT */
 .gallery-grid {
   display: flex;
   flex-wrap: wrap;
@@ -182,8 +183,9 @@ body {
   transform: scale(1.1);
 }
 
-/* Overlay Text */
+/* OVERLAY TEXT */
 .overlay {
+  font-family: "Bebas Neue", sans-serif;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -202,19 +204,4 @@ body {
   transform: translateY(0);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .gallery-item {
-    flex: 1 1 calc(50% - 15px); /* 2 columns */
-  }
-}
-
-@media (max-width: 480px) {
-  .gallery-item {
-    flex: 1 1 100%; /* 1 column */
-  }
-  .gallery-item img {
-    height: 150px;
-  }
-}
 
