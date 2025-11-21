@@ -13,6 +13,8 @@ body::before {
     background: rgba(0,0,0,0.45);
     z-index: -1;
 }
+
+/*TITLE OF THE PAGE*/
 .destination-title {
   position: relative;
   height: 40vh;
@@ -63,6 +65,10 @@ body::before {
     margin-bottom: 40px;
     gap: 20px;
     align-items: center;
+    transition: transform 0.3s ease;
+}
+.spot:hover{
+    transform: scale(1.03);
 }
 
 
@@ -72,7 +78,8 @@ body::before {
     height: 250px;      
     border-radius: 12px;
     overflow: hidden;
-    border: 3px solid #fece05;   
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.6);
+  
 }
 
 .image-box img {
@@ -81,6 +88,7 @@ body::before {
     object-fit: cover;
     display: block;
     border-radius: 0;   
+    
 }
 
 /* SPOT INFO */
@@ -95,11 +103,17 @@ body::before {
     font-weight: 400;
     font-style: normal;
     font-size: 45px;
-    color:#fece05 ;
+    color:#ffffff ;
     margin-top: 10px; 
     margin-bottom: 3px;
-    text-shadow: 4px 4px 8px rgba(0,0,0,0.6)
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.6);
+    transition: color 0.3s ease;
 
+}
+
+.spot-info:hover h2 {
+    color: #00a8e0; 
+    transition: color 0.3s ease;
 }
 
 .spot-info p {
@@ -114,12 +128,13 @@ body::before {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color:#ed3241;
+  color:#fece05;
   font-size: 24px;
   text-shadow: 4px 4px 8px rgba(0,0,0,0.6);
 
 }
 
+/*"LEARN MORE" POP-UP*/
 
 .learn-more {
     position: absolute;

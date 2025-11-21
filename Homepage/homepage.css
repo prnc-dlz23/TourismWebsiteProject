@@ -127,15 +127,6 @@ body {
   padding: 5px 20px 60px 20px; 
   background-color: #00a8e0;
   height: 100%;
-  z-index: 9;
-}
-
-.gallery::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.3); 
-  z-index: 0;
 }
 
 .gallery * {
@@ -192,7 +183,7 @@ body {
   left: 0;
   right: 0;
   background: rgba(0,0,0,0.6);
-  color: #ed3241;
+  color: #fece05;
   font: 45px;
   padding: 15px;
   opacity: 0;

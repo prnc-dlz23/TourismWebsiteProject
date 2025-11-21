@@ -13,7 +13,7 @@ body::before {
     background: rgba(0,0,0,0.75);
     z-index: -1;
 }
-
+/*TITLE OF THE PAGE*/
 .activities-title {
   position: relative;
   height: 40vh;
@@ -44,7 +44,7 @@ body::before {
   font-weight: 300;
 }
 
-/* ACTIVITIES CONTAINER - INLINE LAYOUT FOR 4 SECTIONS */
+/* ACTIVITIES CONTAINER */
 .activities-container {
   max-width: 1400px;
   margin: 60px auto;
@@ -55,7 +55,7 @@ body::before {
   justify-content: center;
 }
 
-/* ACTIVITY CATEGORY - SYMMETRICAL CARDS */
+/* ACTIVITY CATEGORY */
 .activity-category {
   
     background: rgba(255, 255, 255, 0.18);
@@ -174,13 +174,13 @@ body::before {
 }
 
 .activity-list li:hover {
-  color: #ed3241;
+  color: #00a8e0;
   padding-left: 30px;
 }
 
 .activity-list li:before {
   content: "•";
-  color: rgb(120, 228, 131);
+  color: #fece05;
   font-size: 24px;
   position: absolute;
   left: 0;
