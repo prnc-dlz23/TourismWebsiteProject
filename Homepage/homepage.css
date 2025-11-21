@@ -164,7 +164,7 @@ body {
 
 .gallery-item {
   position: relative;
-  flex: 1 1 calc(33.333% - 20px); /* 3 columns */
+  flex: 1 1 calc(33.333% - 20px);
   max-width: 300px;
   overflow: hidden;
   border-radius: 10px;

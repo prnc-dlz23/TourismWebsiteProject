@@ -63,7 +63,7 @@ body::before {
   font-family: "Bebas Neue", sans-serif;
   font-size: 50px;
   color: #fece05;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
@@ -85,12 +85,13 @@ body::before {
 
 /* ITINERARY SECTION */
 .itinerary-section {
-  padding: 30px 0;
+  padding-bottom: 50px;
+  padding-top: 8px;
     background: linear-gradient(
       rgba(0,0,0,0.6),
       rgba(0,0,0,0.6)
     ),
-    url("INTRO_SEC.jpg") center/cover no-repeat;;
+    url("3days.jpg") center/cover no-repeat;;
 }
 
 .itinerary-table {
