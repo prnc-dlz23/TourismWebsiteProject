@@ -61,7 +61,7 @@ body {
       rgba(0,0,0,0.6),
       rgba(0,0,0,0.6)
     ),
-    url("INTRO_SEC.jpg") center/cover no-repeat;
+    url("Intro-section-pic.jpg") center/cover no-repeat;
 
   box-sizing: border-box;
 }
