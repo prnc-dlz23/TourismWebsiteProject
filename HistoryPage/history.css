@@ -1,38 +1,51 @@
-/* history.css */
-/* HERO SECTION - BEHIND NAVIGATION */
 
-.history-hero {
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: url('HistoryBanner.jpg') fixed no-repeat center center/cover;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    z-index: -10;
+}
+
+
+.history-title {
   position: relative;
-  height: 55vh;
+  height: 40vh;
   width: 100%;
-  overflow: hidden;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-              url('HistoryBanner.jpg') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
+ 
 }
 
-.history-hero-content h1 {
+.history-title-content h1 {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 80px;
   font-weight: 400;
    font-style: normal;
+  font-size: 80px;
   margin: 0;
   color: #fece05;
   text-shadow: 4px 4px 8px rgba(0,0,0,0.6);
-  letter-spacing: 2px;
-  padding-top: 70px;
+  padding-top: 170px;
 }
 
-.history-hero-content p {
+.history-title-content p {
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
   margin-top: 10px;
   font-weight: 300;
 }
+
 
 /* CONTAINER */
 .container {
@@ -50,6 +63,8 @@
 .section-header h2 {
   font-family: "Bebas Neue", sans-serif;
   font-size: 50px;
+  font-weight: 400;
+  font-style: norma;
   color: #fece05;
   margin-bottom: 15px;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
@@ -58,30 +73,39 @@
 .underline {
   width: 100px;
   height: 4px;
-  background: #00a8e0;
+  background: #ed3241;
   margin: 0 auto;
   border-radius: 2px;
 }
 
 /* HISTORY SECTION */
 .history-section {
-  padding: 80px 0;
-  background: rgba(255, 255, 255, 0.9);
+  padding: 60px 80px 50px 0;
 }
 
 .history-content {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-}
-
-.history-image {
-  flex: 1;
-}
-
-.history-image img {
   width: 100%;
-  height: 400px;
+  max-width: 1200px;      
+  padding: 40px;
+  border-radius: 25px;
+
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(15px) saturate(180%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  display: flex;          
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;               
+
+}
+
+
+.history-image img { 
+  flex: 1;
+  width: 500px;
+  height: 600px;
   object-fit: cover;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
@@ -96,14 +120,21 @@
   font-size: 18px;
   line-height: 1.8;
   margin-bottom: 25px;
-  color: #333;
+  color: white;
   text-align: justify;
 }
 
 /* CULTURE SECTION */
 .culture-section {
-  padding: 80px 0;
-  background: linear-gradient(135deg, #00a8e0, #0056b3);
+  padding: 20px 0;
+  background: #50c878cf;
+}
+.culture-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.20); 
+  z-index: -1;
 }
 
 .culture-cards {
@@ -197,31 +228,11 @@
   right: 5%;
 }
 
-.culture-icon {
-  width: 60px;
-  height: 60px;
-  background: #00a8e0;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 25px;
-  margin-bottom: 20px;
-  transition: all 0.3s;
-  flex-shrink: 0;
-}
-
-.culture-card:hover .culture-icon {
-  background: #fece05;
-  transform: rotate(15deg);
-}
-
 .culture-card h3 {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 28px;
+  font-size: 32px;
   color: #00a8e0;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   transition: all 0.3s;
   line-height: 1.2;
   flex-shrink: 0;
@@ -243,7 +254,7 @@
 
 .culture-list li {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   padding: 8px 0;
   border-bottom: 1px solid #f0f0f0;
   color: #333;
@@ -260,15 +271,6 @@
 }
 
 
-.culture-list li:before {
-  content: "•";
-  color: #fece05;
-  font-size: 20px;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
 
 .culture-list li:last-child {
   border-bottom: none;
@@ -278,4 +280,3 @@
   color: #00a8e0;
   font-weight: 600;
 }
-

@@ -48,10 +48,10 @@ body::before {
 .activities-container {
   max-width: 1400px;
   margin: 60px auto;
-  padding: 0 20px;
+  padding: 0 100px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-  gap: 25px;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 50px;
   justify-content: center;
 }
 

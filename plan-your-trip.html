@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plan Your Trip</title>
     <link rel="icon" type="images/png" href="NavigationFooter-Icons/cal-logo.png" width="500px">
+    <link rel="stylesheet" href="PlanYourTripPage/pyt.css">
     <link rel="stylesheet" href="nav-footer.css">
      <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,6 +33,178 @@
 
     </ul>
   </div>
+
+  <section class="pyt-title">
+    <div class="pyt-title-content">
+      <h1>Plan Your Trip</h1>
+      <p>Your complete guide to exploring Calabarzon</p>
+    </div>
+  </section>
+
+    <!-- ITINERARY SECTION -->
+  <section class="itinerary-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>3-Day Calabarzon Itinerary</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="itinerary-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Morning</th>
+              <th>Afternoon</th>
+              <th>Evening</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="day-label">Day 1</td>
+              <td>Arrival at Manila, travel to Tagaytay<br>Visit Taal Volcano Viewpoint</td>
+              <td>Lunch at Tagaytay restaurants<br>Visit People's Park in the Sky</td>
+              <td>Check-in at accommodation<br>Dinner with view of Taal Lake</td>
+            </tr>
+            <tr>
+              <td class="day-label">Day 2</td>
+              <td>Travel to Batangas<br>Beach time at Laiya</td>
+              <td>Island hopping adventure<br>Snorkeling and water activities</td>
+              <td>Seafood dinner by the beach<br>Bonfire and stargazing</td>
+            </tr>
+            <tr>
+              <td class="day-label">Day 3</td>
+              <td>Travel to Laguna<br>Visit Pagsanjan Falls</td>
+              <td>Lunch in San Pablo City<br>Explore Seven Lakes</td>
+              <td>Souvenir shopping<br>Departure from Manila</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAVEL TIPS SECTION -->
+  <section class="tips-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Travel Tips</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="tips-content">
+        <div class="tips-list">
+          <h3>Essential Tips for Your Journey</h3>
+          <ul>
+            <li><strong>Best Time to Visit:</strong> November to April for dry season</li>
+            <li><strong>Transportation:</strong> Rent a car or use ride-sharing apps for flexibility</li>
+            <li><strong>Currency:</strong> Philippine Peso (₱) - bring cash for rural areas</li>
+            <li><strong>Language:</strong> Filipino and English are widely spoken</li>
+            <li><strong>Connectivity:</strong> Purchase local SIM card at the airport</li>
+            <li><strong>Reservations:</strong> Book accommodations in advance during peak season</li>
+            <li><strong>Local Customs:</strong> Dress modestly when visiting churches and temples</li>
+            <li><strong>Health:</strong> Stay hydrated and use sunscreen</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKING CHECKLIST SECTION -->
+  <section class="packing-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Packing Checklist</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="packing-content">
+        <div class="packing-categories">
+          <div class="packing-category">
+            <h3>🌞 Essentials</h3>
+            <ul>
+              <li>Valid ID/Passport</li>
+              <li>Cash and credit cards</li>
+              <li>Travel insurance documents</li>
+              <li>Phone and charger</li>
+              <li>Power bank</li>
+            </ul>
+          </div>
+
+          <div class="packing-category">
+            <h3>👕 Clothing</h3>
+            <ul>
+              <li>Lightweight clothing</li>
+              <li>Swimwear</li>
+              <li>Comfortable walking shoes</li>
+              <li>Rain jacket/umbrella</li>
+              <li>Hat and sunglasses</li>
+            </ul>
+          </div>
+
+          <div class="packing-category">
+            <h3>🧴 Toiletries</h3>
+            <ul>
+              <li>Sunscreen (high SPF)</li>
+              <li>Insect repellent</li>
+              <li>Basic first aid kit</li>
+              <li>Personal medications</li>
+              <li>Hand sanitizer</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM SECTION -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Need More Information?</h2>
+        <div class="underline"></div>
+        <p>Send us your questions and we'll help you plan the perfect trip!</p>
+      </div>
+
+      <form class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fullname">Full Name *</label>
+            <input type="text" id="fullname" name="fullname" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="visit-date">Planned Visit Date *</label>
+            <input type="date" id="visit-date" name="visit-date" required>
+          </div>
+          <div class="form-group">
+            <label for="travelers">Number of Travelers *</label>
+            <select id="travelers" name="travelers" required>
+              <option value="">Select...</option>
+              <option value="1">1 person</option>
+              <option value="2">2 people</option>
+              <option value="3">3 people</option>
+              <option value="4">4 people</option>
+              <option value="5">5+ people</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="questions">Your Questions *</label>
+          <textarea id="questions" name="questions" rows="5" placeholder="Tell us about your travel plans, interests, or any specific questions you have..." required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
 
   <!-- FOOTER -->
   <section class="site-footer">

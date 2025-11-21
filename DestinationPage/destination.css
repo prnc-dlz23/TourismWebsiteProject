@@ -91,8 +91,9 @@ body::before {
 }
 
 .spot-info h2 {
-
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 45px;
     color:#fece05 ;
     margin-top: 10px; 
